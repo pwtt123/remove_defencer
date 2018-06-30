@@ -137,7 +137,7 @@ module.exports=function (xOptions) {
                         if(zIfReady)zThis.events.onImgAdded(xPath,xStats);
                     })
                     //文件被修改
-                    .on("update",function (xPath,xStats) {
+                    .on("change",function (xPath,xStats) {
                         if(zThis.settings.ifDefendUpdating)zThis.events.onImgAdded(xPath,xStats);
                     })
                     //文件被删除

@@ -6,7 +6,7 @@ var watcher = new remove_defender({
     outputPath: "D:\\output",
     timeout: 10000,
     exts: ["txt", "jpg"],
-    ifDefendUpdating:0
+    ifDefendUpdating:1
 });
 
 watcher.watch();
