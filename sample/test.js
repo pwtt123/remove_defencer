@@ -29,4 +29,6 @@ watcher
     });
 
 
-//watch.close()
+// setTimeout(()=>{watcher.close();
+//     console.log("closed")
+// },10000)
