@@ -32,7 +32,7 @@ var remove_defender = require("../remove_defender");
 
    timeout: 10000,
 
-   exts: ["txt", "jpg"],
+   exts: ["png", "jpg","gif","jpeg"],
 
    ifDefendUpdating:0
 

@@ -120,7 +120,7 @@ module.exports=function (xOptions) {
                     persistent: true
                 };
                 if (zExts.length) {
-                    let zIgnore = new RegExp(`\\.(?!(${zExts.join("|")})$)`);
+                    let zIgnore = new RegExp(`\\.(?!(${zExts.join("|")})$)`,"i");
                     console.log("zIgnore",zIgnore)
                     zChoOptions.ignored = zIgnore;
                 }
