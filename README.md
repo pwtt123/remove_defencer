@@ -10,7 +10,13 @@ ps： qq 图片文件夹 一般在： 我的文档\\Tencent Files\\QQ号\\Image\
 ## Getting start
 
 
-**start**
+Install with npm:
+
+```
+npm install remove_defender
+```
+
+Then `require` and use it in your code:
 
  初始化参数：
 
