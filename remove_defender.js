@@ -168,17 +168,24 @@ module.exports=function (xOptions) {
             /*
              添加监听事件
              xEventName:事件名
-                 added 文件被创建并保护
-                 saved 删除的文件成功被另存为
-                 timeout 文件超时未被删除，取消保护
-                 error 出错
-                 ready 监听准备完成
+                 added(xPath,xStats) 文件被创建并保护
+                 saved(xPath,xStats) 删除的文件成功被另存为
+                 timeout(xPath,xStats) 文件超时未被删除，取消保护
+                 error(err) 出错
+                 ready(settings) 监听准备完成
              xCallBack:回调
              */
             on(xEventName, xCallBack){
                 if(zThis.data.listenerList[xEventName])zThis.data.listenerList[xEventName]=xCallBack;
                 return this
             },
+
+            // 取消事件监听
+            off(xEventName){
+                if(this.data.listenerList[xEventName])this.data.listenerList[xEventName]=()=>{};
+                return this;
+            },
+
         }
 
     };
