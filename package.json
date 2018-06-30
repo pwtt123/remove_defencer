@@ -1,6 +1,6 @@
 {
   "name": "remove_defender",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "help you copy and save removed files",
   "main": "remove_defender.js",
   "dependencies": {
