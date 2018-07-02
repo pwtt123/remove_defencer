@@ -28,7 +28,7 @@ Then `require` and use it in your code:
 
 
 ```
-var remove_defender = require("../remove_defender");
+var remove_defender = require("remove_defender");
 
    var watcher = new remove_defender({
 
